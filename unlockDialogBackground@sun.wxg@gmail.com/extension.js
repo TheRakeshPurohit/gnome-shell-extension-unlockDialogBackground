@@ -165,6 +165,7 @@ export default class unlockDialogBackgroundExtension extends Extension {
     disable() {
         // This extension controls the lock screen background, so it cannot be disabled on unlock dialog
         this.background.disable();
+        this.background = null;
         dir = null;
 
         if (this._startupPreparedId) {

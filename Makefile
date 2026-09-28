@@ -2,10 +2,10 @@
 schemas:
 	glib-compile-schemas unlockDialogBackground@sun.wxg@gmail.com/schemas/
 
-submit: schemas
+submit:
 	cd unlockDialogBackground@sun.wxg@gmail.com/ && zip -r ~/unlockDialogBackground.zip *
 
-install:
+install: schemas
 	rm -rf ~/.local/share/gnome-shell/extensions/unlockDialogBackground@sun.wxg@gmail.com
 	cp -r unlockDialogBackground@sun.wxg@gmail.com ~/.local/share/gnome-shell/extensions/
 
